@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { NewMessageComponent } from './new-message/new-message.component';
+import { MessagesListComponent } from './messages-list/messages-list.component';
 
 @Component({
   selector: 'app-messages',
   standalone: true,
-  imports: [NewMessageComponent],
+  imports: [NewMessageComponent, MessagesListComponent],
   templateUrl: './messages.component.html',
   styleUrl: './messages.component.css',
 })
