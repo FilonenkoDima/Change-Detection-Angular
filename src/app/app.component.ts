@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CounterComponent } from './counter/counter.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CounterComponent],
+  imports: [CounterComponent, MessagesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
