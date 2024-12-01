@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { NewMessageComponent } from './new-message/new-message.component';
 import { MessagesListComponent } from './messages-list/messages-list.component';
 
@@ -8,6 +8,7 @@ import { MessagesListComponent } from './messages-list/messages-list.component';
   imports: [NewMessageComponent, MessagesListComponent],
   templateUrl: './messages.component.html',
   styleUrl: './messages.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MessagesComponent {
   messages = signal<string[]>([]);
